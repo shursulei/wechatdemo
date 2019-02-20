@@ -1,0 +1,38 @@
+/* pages/classic/classic.wxss */
+.chunk{
+   /*行内元素*/
+    /*display: inline-block;*/
+   /* display: block;*/
+    width:150px;
+    height:100px;
+}
+/*flex flexible box 弹性盒子*/
+/* flex container flex item */
+.container{
+  /*row-reverse,column-reverse,row,column*/
+  /*view默认指定100%;height是自适应的；reverse的排序方式不单单是盒子的排序*/
+  /*均相等*/
+  display: flex;
+  flex-direction: row-reverse;/*指定排列方式，会出现偏移的现象*/
+  flex-wrap: wrap;
+  justify-content: center;/*对其方向的改变space-between,center,space-around,flex-start,flex-end*/
+  align-items: flex-start;
+  /*既在水平方向居中，又在垂直方向居中。justify-content表示主轴，align-items表示交叉轴
+   *align-items: baseline;
+  .stretch,baseline[错落有致]*/
+  height: 200px;
+  background-color: #999999;
+  /*主轴 交叉轴*/
+}
+.color1{ 
+  background-color: brown;
+  font-size: 26px;
+}
+.color2{
+  background-color: aqua;
+  font-size:20px;
+}
+.color3{
+  background-color: blue;
+  font-size:14px;
+}
